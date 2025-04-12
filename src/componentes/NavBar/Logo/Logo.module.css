@@ -1,0 +1,38 @@
+/* NavBar.module.css */
+.logo {
+  font-family: var(--fonte-orbitron);
+  font-size: 2rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 2px; /* Espaço entre elementos */
+}
+
+.tag {
+  color: var(--branco);
+}
+
+.name {
+  color: var(--roxo);
+  text-shadow: 0 0 5px var(--roxo); /* Glow neon */
+}
+
+.domain {
+  color: var(--azul);
+  text-shadow: 0 0 5px var(--azul);
+}
+
+.cursor {
+  animation: blink 1s infinite;
+  color: var(--branco);
+  padding-left: 0.3em;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}

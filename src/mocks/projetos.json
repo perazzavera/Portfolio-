@@ -1,0 +1,47 @@
+{
+  "projetos": [
+    {
+      "id": 1,
+      "titulo": "LussoCasa",
+      "descricao": "Site elegante e luxuoso dedicado ao design de interiores e venda de produtos e projetos de decoração. Desenvolvido com React.js e Bootstrap e CSSModules.",
+      "src": "/images/lussoCasa.png",
+      "tags": [
+        "JavaScript",
+        "React",
+        "Bootstrap",
+        "React Router",
+        "HTML",
+        "CSS"
+      ],
+      "linkDemo": "https://lusso-casa.vercel.app",
+      "linkRepo": "https://github.com/perazzavera/LussoCasa",
+      "destaque": true
+    },
+    {
+      "id": 2,
+      "titulo": "Meteora",
+      "descricao": "E-commerce educacional de moda desenvolvido com React e Context API, apresentando um sistema completo de gerenciamento de carrinho como estudo de caso para estado global em aplicações React.",
+      "src": "/images/meteora.png",
+      "tags": [
+        "JavaScript",
+        "React",
+        "Bootstrap",
+        "API Context",
+        "React Router"
+      ],
+      "linkDemo": "https://projeto-meteora-eight.vercel.app",
+      "linkRepo": "https://github.com/perazzavera/PROJETO-METEORA",
+      "destaque": true
+    },
+    {
+      "id": 3,
+      "titulo": "Serenatto",
+      "descricao": "Site elegante e luxuoso dedicado ao design de interiores e venda de produtos e projetos de decoração. Desenvolvido com React.js e Bootstrap e CSSModules.",
+      "src": "/images/serenatto.png",
+      "tags": ["JavaScript", "React", "Bootstrap", "HTML", "CSS"],
+      "linkDemo": "https://serenatto-one-pearl.vercel.app",
+      "linkRepo": "https://github.com/perazzavera/Serenatto",
+      "destaque": true
+    }
+  ]
+}

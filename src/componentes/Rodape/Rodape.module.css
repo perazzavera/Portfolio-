@@ -1,0 +1,9 @@
+.container {
+  border-top: 1px solid var(--roxo);
+  color: var(--azul);
+  font-family: var(--fonte-jet);
+}
+
+.container a {
+  color: var(--azul);
+}
