@@ -109,8 +109,7 @@ export default function Contato() {
 
           {success && (
             <div className={styles.mensagemSucesso}>
-              <FiCheckCircle />
-              Mensagem enviada com sucesso!
+              <FiCheckCircle /> Mensagem enviada com sucesso!
             </div>
           )}
         </form>

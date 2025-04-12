@@ -98,6 +98,14 @@
   box-shadow: 0 5px 15px rgba(218, 0, 255, 0.3);
 }
 
+.mensagemSucesso {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  font-family: var(--fonte-jet);
+  color: var(--azul);
+}
+
 .infoContato {
   display: flex;
   flex-direction: column;
