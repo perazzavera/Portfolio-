@@ -1,28 +1,7 @@
-import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import projetos from "../../../mocks/projetos.json";
 import styles from "./Conteudo.module.css";
 
 export default function Conteudo() {
-  const [projetos, setProjetos] = useState([]);
-  const [carregando, setCarregando] = useState(true);
-
-  useEffect(() => {
-    fetch("/src/mocks/projetos.json")
-      .then((res) => res.json())
-      .then((data) => {
-        setProjetos(data.projetos);
-        setCarregando(false);
-      })
-      .catch((err) => {
-        console.error("Erro ao carregar projetos:", err);
-        setCarregando(false);
-      });
-  }, []);
-
-  if (carregando) {
-    return <div className={styles.carregando}>Carregando projetos...</div>;
-  }
-
   return (
     <section className={styles.container}>
       <div className={styles.header}>
