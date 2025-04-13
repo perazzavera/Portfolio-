@@ -9,8 +9,16 @@ import {
   FiSend,
   FiCheckCircle,
 } from "react-icons/fi";
+import { useLanguage } from "../../context/LanguageContext";
 
 export default function Contato() {
+  const { language, changeLanguage, translations } = useLanguage();
+  const t = translations[language].contato;
+
+  const handleLanguageChange = (newLanguage) => {
+    changeLanguage(newLanguage);
+  };
+
   const formRef = useRef();
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
@@ -31,7 +39,7 @@ export default function Contato() {
       formRef.current.reset();
       setTimeout(() => setSuccess(false), 5000);
     } catch (error) {
-      alert("Erro ao enviar mensagem. Tente novamente mais tarde.");
+      alert(t.erroMensagem); // Usando a tradução para erro
       console.error("EmailJS error:", error);
     } finally {
       setLoading(false);
@@ -40,14 +48,34 @@ export default function Contato() {
 
   return (
     <section id="contato" className={styles.container}>
+      <div className={styles.languageSwitcher}>
+        <button
+          onClick={() => handleLanguageChange("pt")}
+          className={styles.languageButton}
+        >
+          <img src="/images/BR.svg" alt="bandeira do Brasil" />
+        </button>
+        <button
+          onClick={() => handleLanguageChange("en")}
+          className={styles.languageButton}
+        >
+          <img src="/images/US.svg" alt="US Flag" />
+        </button>
+        <button
+          onClick={() => handleLanguageChange("it")}
+          className={styles.languageButton}
+        >
+          <img src="/images/IT.svg" alt="bandeira da Italia" />
+        </button>
+      </div>
+
       <div className={styles.header}>
         <h2 className={styles.titulo}>
-          <span className={styles.destaque}>#</span>contato
+          <span className={styles.destaque}>#</span>
+          {t.titulo}
         </h2>
         <div className={styles.linha}></div>
-        <p className={styles.subtitulo}>
-          Entre em contato para colaborações ou oportunidades
-        </p>
+        <p className={styles.subtitulo}>{t.subtitulo}</p>
       </div>
 
       <div className={styles.conteudo}>
@@ -58,7 +86,7 @@ export default function Contato() {
         >
           <div className={styles.campo}>
             <label htmlFor="nome" className={styles.label}>
-              Nome
+              {t.nome}
             </label>
             <input
               type="text"
@@ -72,7 +100,7 @@ export default function Contato() {
 
           <div className={styles.campo}>
             <label htmlFor="email" className={styles.label}>
-              E-mail
+              {t.email}
             </label>
             <input
               type="email"
@@ -85,7 +113,7 @@ export default function Contato() {
 
           <div className={styles.campo}>
             <label htmlFor="mensagem" className={styles.label}>
-              Mensagem
+              {t.mensagem}
             </label>
             <textarea
               id="mensagem"
@@ -99,17 +127,17 @@ export default function Contato() {
 
           <button type="submit" className={styles.botao} disabled={loading}>
             {loading ? (
-              "Enviando..."
+              t.enviando
             ) : (
               <>
-                <FiSend className={styles.iconeBotao} /> Enviar Mensagem
+                <FiSend className={styles.iconeBotao} /> {t.enviar}
               </>
             )}
           </button>
 
           {success && (
             <div className={styles.mensagemSucesso}>
-              <FiCheckCircle /> Mensagem enviada com sucesso!
+              <FiCheckCircle /> {t.sucesso}
             </div>
           )}
         </form>
@@ -118,7 +146,7 @@ export default function Contato() {
           <div className={styles.contatoItem}>
             <FiMail className={styles.icone} />
             <div>
-              <h3 className={styles.infoTitulo}>E-mail</h3>
+              <h3 className={styles.infoTitulo}>{t.emailTitulo}</h3>
               <a href="mailto:verapz.dev@gmail.com" className={styles.infoLink}>
                 verapz.dev@gmail.com
               </a>
@@ -126,7 +154,7 @@ export default function Contato() {
           </div>
 
           <div className={styles.redesSociais}>
-            <h3 className={styles.redesTitulo}>Redes Sociais</h3>
+            <h3 className={styles.redesTitulo}>{t.redesTitulo}</h3>
             <div className={styles.icones}>
               <a
                 href="https://linkedin.com/in/veraluciaperazza"

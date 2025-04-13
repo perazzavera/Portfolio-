@@ -3,11 +3,26 @@
   margin: 0 auto;
   padding: 2rem 1rem;
   min-height: 100vh;
+  position: relative;
 }
 
 .header {
   text-align: center;
   margin-bottom: 3rem;
+}
+
+.languageSwitcher {
+  position: absolute;
+  top: 2.5%;
+  right: -5.5%;
+  display: flex;
+  gap: 0.5em;
+  filter: drop-shadow(0 0 0.75rem var(--roxo));
+}
+
+.languageSwitcher button {
+  background-color: transparent;
+  border: none;
 }
 
 .titulo {
@@ -173,32 +188,30 @@
   font-size: 1.2rem;
 }
 
-/* Responsividade */
-@media (max-width: 768px) {
-  .gridProjetos {
-    grid-template-columns: 1fr;
-  }
-
-  .cardBotoes {
-    flex-direction: column;
-  }
-
-  .cardImagemContainer {
-    height: 180px;
-  }
-
-  .botaoDemo,
-  .botaoCodigo {
-    font-size: 1rem;
+@media (min-width: 769px) and (max-width: 1024px) {
+  .languageSwitcher {
+    top: 2.5%;
+    right: 5%;
   }
 }
 
-@media (max-width: 480px) {
+/* Responsividade */
+@media (max-width: 768px) {
   .titulo {
     font-size: 2rem;
+    padding-top: 1rem;
   }
 
   .cardContent {
     padding: 1rem;
+  }
+
+  .languageSwitcher {
+    top: 1%;
+    right: 5%;
+  }
+  .gridProjetos {
+    display: flex;
+    flex-direction: column;
   }
 }

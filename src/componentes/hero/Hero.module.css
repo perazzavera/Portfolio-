@@ -1,6 +1,7 @@
 /* Hero.module.css - Versão Final Testada */
 .container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
@@ -8,6 +9,21 @@
   color: var(--branco);
   text-align: center;
   background-color: #000;
+  position: relative;
+}
+
+.languageSwitcher {
+  position: absolute;
+  top: 3%;
+  right: 5%;
+  display: flex;
+  gap: 0.5em;
+  filter: drop-shadow(0 0 0.75rem var(--roxo));
+}
+
+.languageSwitcher button {
+  background-color: transparent;
+  border: none;
 }
 
 .conteudo {
@@ -172,14 +188,17 @@
   .gradientBorder {
     margin-top: 2rem;
   }
-}
 
-@media (max-width: 480px) {
   .container h2 {
     font-size: 2.2rem;
   }
 
   .link {
     padding: 0.7rem 1.8rem;
+  }
+
+  .languageSwitcher {
+    top: 1%;
+    right: 5%;
   }
 }

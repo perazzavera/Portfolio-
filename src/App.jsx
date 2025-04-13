@@ -5,19 +5,22 @@ import PaginaPadrao from "./pages/PaginaPadrao";
 import About from "./pages/About";
 import Projetos from "./pages/Projetos";
 import Contato from "./pages/Contato";
+import { LanguageProvider } from "./context/LanguageContext";
 
 function App() {
   return (
     <>
       <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<PaginaPadrao />}>
-            <Route index element={<Home />} />
-            <Route path="sobremim" element={<About />} />
-            <Route path="projetos" element={<Projetos />} />
-            <Route path="contato" element={<Contato />} />
-          </Route>
-        </Routes>
+        <LanguageProvider>
+          <Routes>
+            <Route path="/" element={<PaginaPadrao />}>
+              <Route index element={<Home />} />
+              <Route path="sobremim" element={<About />} />
+              <Route path="projetos" element={<Projetos />} />
+              <Route path="contato" element={<Contato />} />
+            </Route>
+          </Routes>
+        </LanguageProvider>
       </BrowserRouter>
     </>
   );

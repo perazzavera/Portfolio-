@@ -1,0 +1,44 @@
+{
+  "hero": {
+    "ola": "Olá, eu sou {{nome}}",
+    "profissao": "Desenvolvedora Front-end",
+    "botaoProjetos": "Ver projetos"
+  },
+
+  "sobreMim": {
+    "titulo": "sobre_mim",
+    "subtitulo": "Olá, eu sou {{nome}}",
+    "bio1": "Desenvolvedora Front-End apaixonada por criar interfaces digitais funcionais e visualmente impressionantes. Com background em design e desenvolvimento, trago uma abordagem única que combina estética e funcionalidade.",
+    "bio2": "Especializada em React, JavaScript e HTML / CSS, transformo ideias complexas em experiências digitais intuitivas e acessíveis.",
+    "habilidadesTitulo": "Principais Habilidades:",
+    "habilidades": [
+      "Desenvolvimento React",
+      "HTML / CSS",
+      "JavaScript ES6+",
+      "Responsive Design",
+      "Git & Version Control"
+    ],
+    "botaoContato": "Entre em Contato",
+    "botaoProjetos": "Ver Projetos"
+  },
+
+  "projetos": {
+    "titulo": "projetos",
+    "subtitulo": "Explore meus principais trabalhos e experimente os demos",
+    "verDemo": "Ver Demo",
+    "codigoFonte": "Código Fonte"
+  },
+
+  "contato": {
+    "titulo": "contato",
+    "subtitulo": "Entre em contato para colaborações ou oportunidades",
+    "nome": "Nome",
+    "email": "E-mail",
+    "mensagem": "Mensagem",
+    "enviar": "Enviar Mensagem",
+    "enviando": "Enviando...",
+    "sucesso": "Mensagem enviada com sucesso!",
+    "emailTitulo": "E-mail",
+    "redesTitulo": "Redes Sociais"
+  }
+}

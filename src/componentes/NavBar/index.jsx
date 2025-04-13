@@ -1,16 +1,33 @@
 import { Link, useLocation } from "react-router-dom";
+import { useLanguage } from "../../context/LanguageContext"; // Importando o hook useLanguage
 import styles from "./NavBar.module.css";
 import Logo from "./Logo";
 
-const links = [
-  { name: "Home", path: "/" },
-  { name: "Sobre mim", path: "/sobremim" },
-  { name: "Projetos", path: "/projetos" },
-  { name: "Contato", path: "/contato" },
-];
+// Definindo os links com as traduções
+const links = {
+  pt: [
+    { name: "Home", path: "/" },
+    { name: "Sobre mim", path: "/sobremim" },
+    { name: "Projetos", path: "/projetos" },
+    { name: "Contato", path: "/contato" },
+  ],
+  en: [
+    { name: "Home", path: "/" },
+    { name: "About me", path: "/sobremim" },
+    { name: "Projects", path: "/projetos" },
+    { name: "Contact", path: "/contato" },
+  ],
+  it: [
+    { name: "Home", path: "/" },
+    { name: "Chi sono", path: "/sobremim" },
+    { name: "Progetti", path: "/projetos" },
+    { name: "Contatti", path: "/contato" },
+  ],
+};
 
 export default function NavBar() {
   const location = useLocation();
+  const { language } = useLanguage(); // Pegando o idioma atual
 
   return (
     <nav className={`${styles.container} navbar navbar-expand-lg py-4`}>
@@ -41,7 +58,7 @@ export default function NavBar() {
           id="navbarNav"
         >
           <ul className="navbar-nav gap-3 gap-lg-5">
-            {links.map((link) => (
+            {links[language].map((link) => (
               <li key={link.name} className="nav-item">
                 <Link
                   to={link.path}

@@ -1,12 +1,42 @@
+import { useLanguage } from "../../context/LanguageContext";
 import { Link } from "react-router-dom";
 import styles from "./SobreMim.module.css";
 
 export default function SobreMim() {
+  const { language, changeLanguage, translations } = useLanguage();
+  const t = translations[language];
+
+  const handleLanguageChange = (newLanguage) => {
+    changeLanguage(newLanguage);
+  };
+
   return (
     <section className={styles.container}>
+      <div className={styles.languageSwitcher}>
+        <button
+          onClick={() => handleLanguageChange("pt")}
+          className={styles.languageButton}
+        >
+          <img src="/images/BR.svg" alt="Bandeira do Brasil" />
+        </button>
+        <button
+          onClick={() => handleLanguageChange("en")}
+          className={styles.languageButton}
+        >
+          <img src="/images/US.svg" alt="Bandeira dos EUA" />
+        </button>
+        <button
+          onClick={() => handleLanguageChange("it")}
+          className={styles.languageButton}
+        >
+          <img src="/images/IT.svg" alt="Bandeira da Itália" />
+        </button>
+      </div>
+
       <div className={styles.header}>
         <h1 className={styles.titulo}>
-          <span className={styles.destaque}>/</span>sobre_mim
+          <span className={styles.destaque}>/</span>
+          {t.sobreMim.titulo}
         </h1>
         <div className={styles.linha}></div>
       </div>
@@ -18,47 +48,26 @@ export default function SobreMim() {
             <div className={styles.bordaAnimada}></div>
           </div>
         </div>
-
         <div className={styles.colunaTexto}>
           <h2 className={styles.subtitulo}>
-            Olá, eu sou{" "}
+            {t.sobreMim.subtitulo.replace("{{nome}}", "")}
             <span className={styles.nomeDestaque}>Vera Perazza</span>
           </h2>
-
           <div className={styles.bio}>
-            <p>
-              Desenvolvedora Front-End apaixonada por criar interfaces digitais
-              funcionais e visualmente impressionantes. Com background em design
-              e desenvolvimento, trago uma abordagem única que combina estética
-              e funcionalidade.
-            </p>
-
-            <p>
-              Especializada em React, JavaScript e HTML / CSS, transformo ideias
-              complexas em experiências digitais intuitivas e acessíveis.
-            </p>
+            <p>{t.sobreMim.bio1}</p>
+            <p>{t.sobreMim.bio2}</p>
           </div>
 
           <div className={styles.habilidades}>
             <h3 className={styles.habilidadesTitulo}>
-              Principais Habilidades:
+              {t.sobreMim.habilidadesTitulo}
             </h3>
             <ul className={styles.listaHabilidades}>
-              <li className={styles.itemHabilidade}>
-                <span className={styles.icone}>▶</span> Desenvolvimento React
-              </li>
-              <li className={styles.itemHabilidade}>
-                <span className={styles.icone}>▶</span> HTML / CSS
-              </li>
-              <li className={styles.itemHabilidade}>
-                <span className={styles.icone}>▶</span> JavaScript ES6+
-              </li>
-              <li className={styles.itemHabilidade}>
-                <span className={styles.icone}>▶</span> Responsive Design
-              </li>
-              <li className={styles.itemHabilidade}>
-                <span className={styles.icone}>▶</span> Git & Version Control
-              </li>
+              {t.sobreMim.habilidades.map((habilidade, index) => (
+                <li key={index} className={styles.itemHabilidade}>
+                  <span className={styles.icone}>▶</span> {habilidade}
+                </li>
+              ))}
             </ul>
           </div>
 
@@ -66,7 +75,7 @@ export default function SobreMim() {
             <div className={styles.containerBorda}>
               <div className={styles.gradientBorder}>
                 <Link className={styles.link} to="/contato">
-                  Entre em Contato
+                  {t.sobreMim.botaoContato}
                 </Link>
               </div>
             </div>
@@ -74,7 +83,7 @@ export default function SobreMim() {
             <div className={styles.containerBorda}>
               <div className={styles.gradientBorder}>
                 <Link className={styles.link} to="/projetos">
-                  Ver Projetos
+                  {t.sobreMim.botaoProjetos}
                 </Link>
               </div>
             </div>

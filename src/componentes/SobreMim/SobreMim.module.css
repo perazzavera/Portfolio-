@@ -4,6 +4,21 @@
   padding: 2rem;
   color: var(--branco);
   font-family: var(--fonte-fira);
+  position: relative;
+}
+
+.languageSwitcher {
+  position: absolute;
+  top: 3%;
+  right: -5.5%;
+  display: flex;
+  gap: 0.5em;
+  filter: drop-shadow(0 0 0.75rem var(--roxo));
+}
+
+.languageSwitcher button {
+  background-color: transparent;
+  border: none;
 }
 
 .header {
@@ -18,7 +33,7 @@
 }
 
 .destaque {
-  color: #da00ff;
+  color: var(--roxo) !important;
 }
 
 .linha {
@@ -173,6 +188,13 @@
   }
 }
 
+@media (min-width: 769px) and (max-width: 1024px) {
+  .languageSwitcher {
+    top: 2.5%;
+    right: 5%;
+  }
+}
+
 /* Responsividade */
 @media (max-width: 768px) {
   .conteudo {
@@ -190,5 +212,14 @@
 
   .subtitulo {
     text-align: center;
+  }
+
+  .titulo {
+    padding-top: 1rem;
+  }
+
+  .languageSwitcher {
+    top: 1%;
+    right: 5%;
   }
 }

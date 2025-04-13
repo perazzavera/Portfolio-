@@ -1,0 +1,44 @@
+{
+  "hero": {
+    "ola": "Hi, I'm {{nome}}",
+    "profissao": "Front-end Developer",
+    "botaoProjetos": "View projects"
+  },
+
+  "sobreMim": {
+    "titulo": "about_me",
+    "subtitulo": "Hi, I'm {{nome}}",
+    "bio1": "Front-End Developer passionate about creating functional and visually stunning digital interfaces. With a background in design and development, I bring a unique approach that combines aesthetics and functionality.",
+    "bio2": "Specialized in React, JavaScript, and HTML / CSS, I turn complex ideas into intuitive and accessible digital experiences.",
+    "habilidadesTitulo": "Main Skills:",
+    "habilidades": [
+      "React Development",
+      "HTML / CSS",
+      "JavaScript ES6+",
+      "Responsive Design",
+      "Git & Version Control"
+    ],
+    "botaoContato": "Contact Me",
+    "botaoProjetos": "View Projects"
+  },
+
+  "projetos": {
+    "titulo": "projects",
+    "subtitulo": "Explore my main works and try the demos",
+    "verDemo": "View Demo",
+    "codigoFonte": "Source Code"
+  },
+
+  "contato": {
+    "titulo": "contact",
+    "subtitulo": "Get in touch for collaborations or opportunities",
+    "nome": "Name",
+    "email": "Email",
+    "mensagem": "Message",
+    "enviar": "Send Message",
+    "enviando": "Sending...",
+    "sucesso": "Message sent successfully!",
+    "emailTitulo": "Email",
+    "redesTitulo": "Social Media"
+  }
+}

@@ -2,6 +2,7 @@
   border-top: 1px solid var(--roxo);
   color: var(--azul);
   font-family: var(--fonte-jet);
+  padding: 0 0.5rem;
 }
 
 .container a {

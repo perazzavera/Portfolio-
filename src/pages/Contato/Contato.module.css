@@ -3,6 +3,21 @@
   margin: 0 auto;
   padding: 4rem 1rem;
   color: #fff;
+  position: relative;
+}
+
+.languageSwitcher {
+  position: absolute;
+  top: 2.5%;
+  right: -5.5%;
+  display: flex;
+  gap: 0.5em;
+  filter: drop-shadow(0 0 0.75rem var(--roxo));
+}
+
+.languageSwitcher button {
+  background-color: transparent;
+  border: none;
 }
 
 .header {
@@ -166,6 +181,13 @@
   transform: translateY(-3px);
 }
 
+@media (min-width: 769px) and (max-width: 1024px) {
+  .languageSwitcher {
+    top: 2.5%;
+    right: 5%;
+  }
+}
+
 /* Responsividade */
 @media (max-width: 768px) {
   .conteudo {
@@ -176,14 +198,16 @@
     order: -1;
     margin-bottom: 2rem;
   }
-}
-
-@media (max-width: 480px) {
   .titulo {
     font-size: 2rem;
   }
 
   .icones {
     justify-content: center;
+  }
+
+  .languageSwitcher {
+    top: 1%;
+    right: 5%;
   }
 }
