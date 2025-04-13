@@ -54,7 +54,7 @@ export default function Hero() {
         <h3 id="typing-text">
           {language === "pt" && "Desenvolvedora Front-end"}
           {language === "en" && "Front-end Developer"}
-          {language === "it" && "Sviluppatore Front-end"}
+          {language === "it" && "Sviluppatrice Front-end"}
         </h3>
 
         <div className={styles.containerBorda}>
