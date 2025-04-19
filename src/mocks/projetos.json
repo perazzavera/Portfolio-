@@ -26,5 +26,47 @@
     "linkDemo": "https://projeto-meteora-eight.vercel.app",
     "linkRepo": "https://github.com/perazzavera/PROJETO-METEORA",
     "destaque": true
+  },
+  {
+    "id": 3,
+    "titulo": "Positivus",
+    "descricao": {
+      "pt": "Positivus é uma agência de marketing digital especializada em impulsionar marcas com estratégias criativas e soluções personalizadas para gerar impacto positivo.",
+      "en": "Positivus is a digital marketing agency focused on empowering brands through creative strategies and tailored solutions to drive positive impact.",
+      "it": "Positivus è un'agenzia di marketing digitale specializzata nel potenziare i brand con strategie creative e soluzioni personalizzate per generare un impatto positivo."
+    },
+    "src": "/images/positivus.png",
+    "tags": ["JavaScript", "React", "HTML", "Bootstrap", "React Router"],
+    "linkDemo": "https://positivus-bice.vercel.app",
+    "linkRepo": "https://github.com/perazzavera/Positivus",
+    "destaque": true
+  },
+  {
+    "id": 4,
+    "titulo": "Serenatto",
+    "descricao": {
+      "pt": "Serenatto é um convite digital para uma experiência acolhedora, onde cada clique revela o sabor único de um café especial e a elegância de um bistrô moderno.",
+      "en": "Serenatto is a digital invitation to a cozy experience, where every click reveals the unique flavor of specialty coffee and the elegance of a modern bistro.",
+      "it": "Serenatto è un invito digitale a un'esperienza accogliente, dove ogni clic svela il gusto unico di un caffè speciale e l'eleganza di un bistrot moderno."
+    },
+    "src": "/images/serenatto.png",
+    "tags": ["JavaScript", "HTML", "Bootstrap"],
+    "linkDemo": "https://caffeserenatto.vercel.app",
+    "linkRepo": "https://github.com/perazzavera/Serenatto",
+    "destaque": true
+  },
+  {
+    "id": 5,
+    "titulo": "SHOP.CO",
+    "descricao": {
+      "pt": "SHOP.CO é um e-commerce moderno, responsivo e altamente performático, desenvolvido com React.js, Vite e Tailwind CSS. O projeto foi criado com foco na experiência do usuário e em boas práticas de desenvolvimento front-end.",
+      "en": "SHOP.CO is a modern, responsive, and highly performant e-commerce platform, developed with React.js, Vite, and Tailwind CSS. The project was created with a focus on user experience and best practices in front-end development.",
+      "it": "SHOP.CO è una piattaforma di e-commerce moderna, reattiva e ad alte prestazioni, sviluppata con React.js, Vite e Tailwind CSS. Il progetto è stato creato con un focus sull'esperienza utente e le migliori pratiche nello sviluppo front-end."
+    },
+    "src": "/images/shop.co.png",
+    "tags": ["React.js", "Javascript", "Tailwind", "Vite", "Git"],
+    "linkDemo": "https://projeto-shopco.vercel.app",
+    "linkRepo": "https://github.com/perazzavera/Shop.Co---Atualizado",
+    "destaque": true
   }
 ]
