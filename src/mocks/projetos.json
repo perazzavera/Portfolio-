@@ -68,5 +68,41 @@
     "linkDemo": "https://projeto-shopco.vercel.app",
     "linkRepo": "https://github.com/perazzavera/Shop.Co---Atualizado",
     "destaque": true
+  },
+  {
+    "id": 6,
+    "titulo": "Elegance Home",
+    "descricao": {
+      "pt": "Elegance Home é um projeto de e-commerce dedicado a produtos de decoração de interiores e móveis de luxo. O objetivo do projeto é proporcionar uma experiência de compra visualmente impactante, com foco na qualidade, estilo e sofisticação.",
+      "en": "Elegance Home is an e-commerce project dedicated to interior design and luxury furniture products. The project's goal is to provide a visually striking shopping experience, with a focus on quality, style and sophistication.",
+      "it": "Elegance Home è un progetto e-commerce dedicato ai prodotti di arredamento d'interni e all'arredamento di lusso. L'obiettivo del progetto è offrire un'esperienza di acquisto visivamente sorprendente, focalizzata su qualità, stile e raffinatezza."
+    },
+    "src": "/images/elegance.png",
+    "tags": ["React.js", "Javascript", "Tailwind", "Vite", "Git"],
+    "linkDemo": "https://elegance-home.vercel.app/",
+    "linkRepo": "https://github.com/perazzavera/elegance-home",
+    "destaque": true
+  },
+  {
+    "id": 7,
+    "titulo": "Entre Folhas",
+    "descricao": {
+      "pt": "E-commerce fictício desenvolvido com React, Vite e Tailwind CSS, integrando React Router, Embla Carousel e React Toastify para oferecer uma navegação fluida, carrosséis dinâmicos e notificações elegantes, com foco em performance e responsividade.",
+      "en": "Fictional e-commerce developed with React, Vite, and Tailwind CSS, integrating React Router, Embla Carousel, and React Toastify to provide smooth navigation, dynamic carousels, and elegant notifications, with a strong focus on performance and responsiveness.",
+      "it": "E-commerce fittizio sviluppato con React, Vite e Tailwind CSS, integrando React Router, Embla Carousel e React Toastify per offrire una navigazione fluida, caroselli dinamici e notifiche eleganti, con un forte focus su prestazioni e reattività."
+    },
+    "src": "/images/entre-folhas.png",
+    "tags": [
+      "React.js",
+      "Javascript",
+      "Tailwind",
+      "Vite",
+      "Git",
+      "Toastify",
+      "Embla Carousel"
+    ],
+    "linkDemo": "https://entre-folhas.vercel.app",
+    "linkRepo": "https://github.com/perazzavera/entre-folhas",
+    "destaque": true
   }
 ]
